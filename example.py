@@ -28,9 +28,10 @@ async def init_app(_argv: List[str]) -> web.Application:
 
     client_session = ClientSession()
     retort = init_retort()
-    weather_client = TodoClient(client_session, retort)
-    weather_handler = TodoHandler(weather_client, retort)
 
-    app.add_routes([web.get("/todos/", weather_handler.get_todos)])
+    todo_client = TodoClient(client_session, retort)
+    todo_handler = TodoHandler(todo_client, retort)
+
+    app.add_routes([web.get("/todos/", todo_handler.get_todos)])
 
     return app
