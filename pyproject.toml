@@ -1,0 +1,23 @@
+[build-system]
+requires = [
+    'setuptools==68.1.2',
+]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'route_wrapper'
+version = '1.0.0'
+description = 'Library for declarative view writing'
+readme = 'README.md'
+requires-python = '>=3.10.0'
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.isort]
+profile = "black"
+
+[[project.authors]]
+name = 'lubaskinc0de'
+email = 'lubaskincorporation@gmail.com'
