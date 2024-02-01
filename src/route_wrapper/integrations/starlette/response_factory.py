@@ -1,8 +1,6 @@
 from starlette.responses import JSONResponse
 
-from src.route_wrapper import MappingDumper
-from src.route_wrapper import OutputModelT
-from src.route_wrapper import WebResponseFactory
+from route_wrapper.common import WebResponseFactory, MappingDumper, OutputModelT
 
 
 class JSONResponseFactory(WebResponseFactory):

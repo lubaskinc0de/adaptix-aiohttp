@@ -2,7 +2,7 @@ from typing import Any
 
 from starlette.requests import Request as StarletteRequest
 
-from src.route_wrapper import (
+from route_wrapper.common import (
     Request,
     RequestQuery,
     RequestHeaders,

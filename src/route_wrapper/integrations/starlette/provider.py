@@ -4,8 +4,7 @@ from typing import (
     TypeVar,
 )
 
-from src.route_wrapper import web_provider
-
+from route_wrapper import web_provider
 from .request_adapter import RequestAdapter
 
 T = TypeVar("T")

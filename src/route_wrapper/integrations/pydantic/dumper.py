@@ -1,7 +1,7 @@
 from typing import Optional, Any, TypeVar
 from pydantic import BaseModel
 
-from src.route_wrapper import MappingDumper
+from route_wrapper.common import MappingDumper
 
 T = TypeVar("T", bound=BaseModel)
 

@@ -2,7 +2,7 @@ from typing import Any
 
 from aiohttp import web
 
-from src.route_wrapper import (
+from route_wrapper.common import (
     Request,
     RequestQuery,
     RequestHeaders,

@@ -2,7 +2,7 @@ from typing import TypeVar, Any, Type
 
 from pydantic import BaseModel
 
-from src.route_wrapper import Loader
+from route_wrapper.common import Loader
 
 T = TypeVar("T", bound=BaseModel)
 

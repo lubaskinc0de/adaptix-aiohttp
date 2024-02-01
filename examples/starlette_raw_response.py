@@ -43,11 +43,12 @@ async def new_todo_raw(
 
     return response
 
+m = ["POST"]
 
 app = Starlette(
     debug=True,
     routes=[
-        Route("/", new_todo),
-        Route("/raw", new_todo_raw),
+        Route("/", new_todo, methods=m),
+        Route("/raw", new_todo_raw, methods=m),
     ],
 )

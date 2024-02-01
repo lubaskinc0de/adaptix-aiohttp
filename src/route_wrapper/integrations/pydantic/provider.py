@@ -3,8 +3,8 @@ from typing import (
 )
 
 from route_wrapper.integrations.pydantic.loader import PydanticLoader
-from src.route_wrapper import ParamsGetter
-from src.route_wrapper import OutputModelT
+from src.route_wrapper.common.parser import ParamsGetter
+from src.route_wrapper.common import OutputModelT
 from src.route_wrapper import Route
 from src.route_wrapper import RouteWrapper
 
